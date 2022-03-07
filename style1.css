@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color:azure;
+}
+
+.container{
+    padding: 5px;
+    min-height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container img{
+    max-width: 100%;
+}
+
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(48, 98, 14);
+    color: rgb(221, 201, 26);
+    font-size: 2em;
+    font-family: 'Special Elite', cursive;
+    padding-top: 8px;
+}
+
+.col{
+    float:left;
+    position: relative;
+    padding: 5px;
+}
+.card{
+    border: 2px solid rgb(221, 201, 26);
+    padding: 10px;
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.col-4{
+    width: 25%;
+}
+
+.col-3{
+    width:33.3%;
+}
+
+.col-2{
+    width:50%;
+}
+
+.col-1{
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+.box{
+    background-color:rgb(228, 228, 228);
+    border-radius: 5px;
+    margin:10px;
+    border:2px solid rgb(221, 201, 26);
+    padding:10px;
+}
+
+.box .content{
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.box .content::first-letter{
+    font-size: 2em;
+}
+
+.box header{
+    background-color: rgb(48, 98, 14);
+    text-transform: uppercase;
+    text-align: center;
+    color: azure;
+    line-height: 45px;
+    font-size: 1.5em;
+}
+
+.box footer{
+    background-color: darkgrey;
+    text-align: center;
+    color: azure;
+    line-height: 45px;
+    font-size: 1.2em;
+}
+
+input[type=text], input[type=email], textarea{
+    width:100%;
+    padding: 10px;
+    border: 2px solid darkgrey;
+    border-radius: 2px;
+}
+
+.mainForm{
+    padding: 25px;
+    background-color:rgb(48, 98, 14) ;
+    color: darkgrey;
+    width: 50%;
+    margin: auto;
+    border: 3px solid darkgrey;
+    border-radius: 2px ;
+
+}
+
+.btn{
+    background-color: darkgrey;
+    color: azure;
+    font-size: 1em;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: grey;
+}
+
+label{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.hero {
+    color:azure;
+    font-size: 1.5em;
+    background-color: rgb(48, 98, 14);
+    text-align: center;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.hero h1{
+    color: rgb(221, 201, 26);
+    font-size: 3em;
+    font-family: 'Special Elite', cursive;
+    padding-top: 15px;
+}
+
+.hero h2{
+    font-size: 2em;
+}
+
+.header {
+    height:100px;
+ }
+
+.section {
+    clear: both;
+    border: 1px solid black;
+    padding-top: 30px 0;
+    margin-bottom: 25px;
+    background-color:azure;
+    height: auto;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    border-radius: 40px;
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Special Elite', cursive;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding-top: 10px;
+    float:left;
+    position: relative;
+    font-family: 'Special Elite', cursive;
+}
+
+nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: 1.5em;
+    border-radius: 40px;
+   
+}
+
+nav ul li:hover a{
+    background-color:rgb(48, 98, 14) ;
+    color: rgb(221, 201, 26);
+    padding-bottom: 3px;
+    
+}
+
+.mainHeader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 90px;
+    background-color:azure;
+    width: 100%;
+    z-index: 10;
+    padding: 5px;
+}
+
+@media all and (max-width:760px){
+    .mainHeader{
+        height: auto;
+        padding-top: 0;
+    }
+
+    .hero{
+        margin-top: 8px;
+    }
+    
+    .logo {
+        float: none;
+        margin: 2px auto 2px;
+        display: block;
+    }
+
+
+    nav ul{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    nav ul li{
+        float: initial;
+        display: inline-block;
+    }
+    nav ul li a{
+        padding:3 10 0 10px;
+    }
+
+    .col-4{
+        width:100%;
+    }
+}
+
+@media all and (max-width:600px){
+    .col-3, .col-2{
+        width:100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .mainForm{
+        width: 100%;
+    }
+}
+
